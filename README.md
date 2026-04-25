@@ -18,7 +18,7 @@ To generate and commit doc stubs you will have to either clone the repository to
 Once you install Nasdanika CLI the first step isto generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [xcore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/xcore/doc/save/index.html) command pipeline:
 
 ```
-nsd xcore My.xcore doc --diagram=my.drawio --doc-stubs --doc-dir=doc save my.xmi
+nsd xcore my.xcore doc --diagram=my.drawio --doc-stubs --doc-dir=doc save my.xmi
 ```
 
 Remove `--diagram=my.drawio` if you've already generated a diagram file before and manually adjusted it. 
