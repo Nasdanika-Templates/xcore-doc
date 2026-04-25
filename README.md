@@ -1,6 +1,6 @@
-# Ecore Documentation
+# Xcore Documentation
 
-This is a template repository for generating ecore documentation from ecore metamodels.
+This is a template repository for generating documentation from [Xcore](https://wiki.eclipse.org/Xcore) metamodels.
 Documentation can be generated manually using [Nasdanika CLI](https://docs.nasdanika.org/nsd-cli/index.html) and then published to GitHub pages if desired.
 It can also be generated using GitHub actions calling Nasdanika CLI. 
 
@@ -15,10 +15,10 @@ To generate and commit doc stubs you will have to either clone the repository to
 
 ## Manual generation
 
-Once you install Nasdanika CLI the first step isto generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [model/ecore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/model/ecore/doc/save/index.html) command pipeline:
+Once you install Nasdanika CLI the first step isto generate the web site ([HTML Application](https://html-app.models.nasdanika.org/index.html)) model with [xcore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/xcore/doc/save/index.html) command pipeline:
 
 ```
-nsd model My.ecore ecore doc --diagram=my.drawio --doc-stubs --doc-dir=doc save my.xmi
+nsd xcore My.xcore doc --diagram=my.drawio --doc-stubs --doc-dir=doc save my.xmi
 ```
 
 Remove `--diagram=my.drawio` if you've already generated a diagram file before and manually adjusted it. 
@@ -39,16 +39,9 @@ You can also mount it to a larger site.
 
 GitHub actions generate a documentation site, a diagram, and a doc stubs zip:
 
-* Documentation: https://nasdanika-templates.github.io/ecore-doc/index.html
-* Generated diagram file: https://nasdanika-templates.github.io/ecore-doc/my.drawio
-* Doc stubs zip: https://nasdanika-templates.github.io/ecore-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
-
-## SQL Metadata
-
-Generation of SQL metadata documentation can be done by:
-
-* Generating an ecore model from SQL metadata and then a documentation model using [sql/metadata/sql-to-ecore/ecore/doc/save](https://docs.nasdanika.org/nsd-cli/nsd/sql/metadata/sql-to-ecore/ecore/doc/save/index.html) command pipeline
-* Generating and publishing a documentation site
+* Documentation: https://nasdanika-templates.github.io/xcore-doc/index.html
+* Generated diagram file: https://nasdanika-templates.github.io/xcore-doc/my.drawio
+* Doc stubs zip: https://nasdanika-templates.github.io/xcore-doc/doc-stubs.zip - unzip and upload using GitHub Web interface if you are not using a local repository clone.
 
 ## Upgrade to code generation
 
